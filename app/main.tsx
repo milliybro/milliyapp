@@ -99,9 +99,7 @@ export default function MilliyApp() {
   const [hoveredService, setHoveredService] = useState(null);
   const [activeStep, setActiveStep] = useState(0);
 
-  const launchDate = useRef(
-    new Date(Date.now() + 60 * 24 * 3600 * 1000).toISOString(),
-  ).current;
+  const launchDate = useRef(new Date("2026-05-01").toISOString()).current;
   const countdown = useCountdown(launchDate);
   const isDark = theme === "dark";
 
@@ -637,7 +635,7 @@ export default function MilliyApp() {
                     fontWeight: 800,
                     letterSpacing: ".02em",
                     lineHeight: 1,
-                    background: T.heroGrad,
+                    // background: T.heroGrad,
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -657,7 +655,7 @@ export default function MilliyApp() {
                     lineHeight: 1,
                     color: T.accent,
                     opacity: 0.5,
-                    animation: "glitch1 5.5s infinite",
+                    // animation: "glitch1 5.5s infinite",
                     WebkitTextFillColor: T.accent,
                   }}
                 >
@@ -675,7 +673,7 @@ export default function MilliyApp() {
                     lineHeight: 1,
                     color: T.accent2,
                     opacity: 0.38,
-                    animation: "glitch2 5.5s .4s infinite",
+                    // animation: "glitch2 5.5s .4s infinite",
                     WebkitTextFillColor: T.accent2,
                   }}
                 >
